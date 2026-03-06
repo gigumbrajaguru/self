@@ -432,7 +432,7 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xojkqqob" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -450,10 +450,7 @@
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p class="form-note">
-            Note: This form uses <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> for submissions.
-            Replace the form action with your Formspree endpoint to enable it.
-          </p>
+          <p id="form-status" class="form-note" style="display:none;"></p>
         </form>
 
       </div>

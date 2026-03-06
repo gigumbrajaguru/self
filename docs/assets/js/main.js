@@ -16,13 +16,33 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// Contact form — swap the action URL for your Formspree endpoint
-// e.g. action="https://formspree.io/f/yourcode"
+// Contact form — submits to Formspree
 const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
+const formStatus = document.getElementById('form-status');
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  // If you've added a Formspree action attribute, remove the e.preventDefault()
-  // and it will submit normally. This alert is just a placeholder.
-  alert('Thanks for your message! (Connect Formspree to send real emails.)');
-  form.reset();
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+    if (res.ok) {
+      formStatus.textContent = 'Thanks! Your message has been sent.';
+      formStatus.style.color = 'var(--accent, #4f8ef7)';
+      form.reset();
+    } else {
+      formStatus.textContent = 'Oops! Something went wrong. Please try again.';
+      formStatus.style.color = '#e55';
+    }
+  } catch {
+    formStatus.textContent = 'Network error. Please check your connection.';
+    formStatus.style.color = '#e55';
+  }
+  formStatus.style.display = 'block';
+  btn.disabled = false;
+  btn.textContent = 'Send Message';
 });
