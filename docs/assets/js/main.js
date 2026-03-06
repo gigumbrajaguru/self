@@ -16,7 +16,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// Contact form — submits to Formspree
+// Contact form — submits to FormSubmit (AJAX)
 const form = document.getElementById('contactForm');
 const formStatus = document.getElementById('form-status');
 form.addEventListener('submit', async (e) => {
@@ -24,15 +24,16 @@ form.addEventListener('submit', async (e) => {
   const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
   btn.textContent = 'Sending…';
+  const data = Object.fromEntries(new FormData(form));
   try {
-    const res = await fetch(form.action, {
+    const res = await fetch('https://formsubmit.co/ajax/gigumbrajaguru@gmail.com', {
       method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(data),
     });
     if (res.ok) {
       formStatus.textContent = 'Thanks! Your message has been sent.';
-      formStatus.style.color = 'var(--accent, #4f8ef7)';
+      formStatus.style.color = 'var(--clr-accent, #7c6af7)';
       form.reset();
     } else {
       formStatus.textContent = 'Oops! Something went wrong. Please try again.';
