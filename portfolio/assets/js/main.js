@@ -31,7 +31,8 @@ form.addEventListener('submit', async (e) => {
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify(data),
     });
-    if (res.ok) {
+    const json = await res.json();
+    if (res.ok && json.success === 'true') {
       formStatus.textContent = 'Thanks! Your message has been sent.';
       formStatus.style.color = 'var(--clr-accent, #7c6af7)';
       form.reset();
