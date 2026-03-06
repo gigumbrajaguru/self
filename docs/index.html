@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Gigum Bandara Rajaguru - Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +14,12 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">Portfolio</a>
+      <a href="#hero" class="nav-logo">Gigum Rajaguru</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -30,24 +32,23 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <div class="hero-photo">
-        <!-- Replace the src with your actual photo -->
-        <img src="assets/images/profile.jpg" alt="Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <img src="assets/images/profile.jpg" alt="Gigum Bandara Rajaguru" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
         <div class="photo-placeholder">
-          <span>Your Photo</span>
+          <span>GBR</span>
         </div>
       </div>
       <div class="hero-text">
         <p class="hero-greeting">Hello, I'm</p>
-        <!-- Replace with your name -->
-        <h1 class="hero-name">Your Name</h1>
-        <!-- Replace with your title/role -->
-        <p class="hero-role">Software Developer &amp; Creator</p>
-        <!-- Replace with your short bio -->
+        <h1 class="hero-name">Gigum Bandara Rajaguru</h1>
+        <p class="hero-role">Senior Software Engineer</p>
         <p class="hero-bio">
-          Passionate about building meaningful products and solving real-world problems through technology.
+          Dynamic Senior Software Engineer with 6+ years of experience delivering scalable solutions
+          and driving technical innovation. Proficient in backend development, system optimization,
+          and data analytics. Currently enhancing expertise in AI/ML and strategic decision-making
+          through a Master's in Business Analytics.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#experience" class="btn btn-primary">View Experience</a>
           <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
@@ -64,110 +65,240 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <!-- Replace with your about text -->
           <p>
-            I'm a developer who loves crafting clean, user-focused experiences. My background spans
-            web development, design, and problem-solving across various domains.
+            I'm a Senior Software Engineer based in Ganemulla, Gampaha, Sri Lanka, with over 6 years
+            of experience building scalable backend systems, web applications, and data-driven solutions.
+            I have a strong track record of leading cross-functional teams to deliver complex projects
+            on time with measurable business impact.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new technologies, contributing to open source,
-            or capturing moments through photography.
+            Currently working at HCL Technologies on the Irdeto Innovation team, I specialize in Python,
+            FastAPI, Docker, and microservices architecture. I'm also pursuing a Master's degree in
+            Business Analytics - Data Science &amp; Artificial Intelligence at the University of Colombo
+            School of Computing.
           </p>
         </div>
         <div class="skills">
           <h3>Skills &amp; Technologies</h3>
           <div class="skill-tags">
-            <!-- Replace/add your actual skills -->
             <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">C++</span>
+            <span class="tag">Angular</span>
+            <span class="tag">TypeScript</span>
             <span class="tag">JavaScript</span>
-            <span class="tag">Django</span>
-            <span class="tag">React</span>
-            <span class="tag">HTML / CSS</span>
-            <span class="tag">Git</span>
+            <span class="tag">HTML5 / CSS3</span>
+            <span class="tag">MongoDB</span>
             <span class="tag">SQL</span>
-            <span class="tag">REST APIs</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Heroku</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Jira</span>
+          </div>
+          <h3 style="margin-top: 1.5rem;">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Accountability</span>
+            <span class="tag">Creativity</span>
+            <span class="tag">Always Learning</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Leadership</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="section section-alt" id="projects">
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="projects-grid" style="grid-template-columns: 1fr;">
+
+        <article class="project-card">
+          <div class="project-info">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <h3 class="project-title">Senior Software Engineer - Python</h3>
+              <span class="tag tag-sm">01/2022 - Present</span>
+            </div>
+            <p style="font-weight:600; margin-bottom:0.25rem;">HCL Technologies - Irdeto: Innovation</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem; margin-bottom:1rem;">Colombo, Sri Lanka &mdash; Multinational IT services and consulting company, a subsidiary of HCL Enterprise</p>
+            <ul style="padding-left:1.25rem; line-height:1.8;">
+              <li>Overhauled system monitoring tools, reducing system downtime by 30% through proactive issue resolution.</li>
+              <li>Designed and implemented a robust data analysis framework using Python (Pandas, NumPy), enabling real-time insights for improved decision-making.</li>
+              <li>Led a 5-member team to develop a security and privacy-focused solution, increasing operational efficiency by 25%.</li>
+              <li>Utilized FastAPI and Docker to build scalable microservices, ensuring seamless deployment across cloud platforms.</li>
+            </ul>
+            <div class="project-tags" style="margin-top:1rem;">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">FastAPI</span>
+              <span class="tag tag-sm">Pandas</span>
+              <span class="tag tag-sm">NumPy</span>
+              <span class="tag tag-sm">Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <h3 class="project-title">Software Engineer - Innovation Team</h3>
+              <span class="tag tag-sm">05/2021 - 12/2021</span>
+            </div>
+            <p style="font-weight:600; margin-bottom:0.25rem;">Sampath Information Technology Solution Ltd.</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem; margin-bottom:1rem;">Colombo, Sri Lanka &mdash; A fully owned subsidiary of Sampath Bank PLC</p>
+            <ul style="padding-left:1.25rem; line-height:1.8;">
+              <li>Developed a web-based meeting management tool using Angular and TypeScript, streamlining operations for over 50 business units.</li>
+              <li>Conducted comprehensive research on banking systems, integrating domain insights to enhance product functionality.</li>
+              <li>Collaborated with cross-functional teams to prioritize and implement customer requirements, ensuring 100% alignment with project goals.</li>
+              <li>Spearheaded requirement analysis and change management processes, resulting in a 20% reduction in project delivery time.</li>
+            </ul>
+            <div class="project-tags" style="margin-top:1rem;">
+              <span class="tag tag-sm">TypeScript</span>
+              <span class="tag tag-sm">Angular</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <h3 class="project-title">Backend Developer - Python | PHP | Android</h3>
+              <span class="tag tag-sm">09/2014 - 04/2021</span>
+            </div>
+            <p style="font-weight:600; margin-bottom:0.25rem;">Freelancer</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem; margin-bottom:1rem;">Gampaha, Sri Lanka</p>
+            <ul style="padding-left:1.25rem; line-height:1.8;">
+              <li>Delivered 15+ custom web, mobile and bot applications tailored to diverse industries, improving client productivity by up to 40%.</li>
+              <li>Collaborated with international clients to build scalable backend systems.</li>
+              <li>Integrated third-party APIs and payment gateways across projects, improving functionality and user experience for end-users.</li>
+            </ul>
+            <div class="project-tags" style="margin-top:1rem;">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">PHP</span>
+              <span class="tag tag-sm">Android</span>
+              <span class="tag tag-sm">REST APIs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <h3 class="project-title">Scout - Group Leader (Volunteer)</h3>
+              <span class="tag tag-sm">06/2007 - 02/2014</span>
+            </div>
+            <p style="font-weight:600; margin-bottom:0.25rem;">Galahitiyawa Central College - Scout Group</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem; margin-bottom:1rem;">Ganemulla, Sri Lanka</p>
+            <ul style="padding-left:1.25rem; line-height:1.8;">
+              <li>Led and motivated a team of 30+ scouts, fostering collaboration and teamwork during annual camps and local competitions.</li>
+              <li>Coordinated activities that enhanced problem-solving, communication, and leadership skills among team members.</li>
+              <li>Organized 5+ large-scale camping events, ensuring safety and enjoyment for 100+ participants.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Personal Projects</h2>
       <p class="section-subtitle">A selection of things I've built</p>
       <div class="projects-grid">
 
-        <!-- Project Card 1 — replace with your real project -->
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/images/project1.jpg" alt="Project 1" onerror="this.parentElement.classList.add('no-image')" />
+            <img src="assets/images/project1.jpg" alt="Clan Manager" onerror="this.parentElement.classList.add('no-image')" />
             <div class="project-overlay">
-              <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
-              <a href="#" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/gigumbrajaguru" class="btn btn-sm" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
           <div class="project-info">
-            <h3 class="project-title">Project Name</h3>
+            <h3 class="project-title">Clan Manager</h3>
             <p class="project-desc">
-              Brief description of what this project does and the problem it solves.
-              Mention key features or interesting technical challenges.
+              An online gaming community user-management and event management platform.
+              Makes it easier to manage clan members and coordinate gaming events.
             </p>
             <div class="project-tags">
+              <span class="tag tag-sm">01/2020 - 03/2022</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project2.jpg" alt="SlackTats BOT" onerror="this.parentElement.classList.add('no-image')" />
+            <div class="project-overlay">
+              <a href="https://github.com/gigumbrajaguru" class="btn btn-sm" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">SlackTats BOT</h3>
+            <p class="project-desc">
+              A bot that helps manage teams on the Slack workspace. Automates routine team
+              management tasks to improve productivity and communication.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-sm">08/2018 - 03/2019</span>
               <span class="tag tag-sm">Python</span>
-              <span class="tag tag-sm">Django</span>
-              <span class="tag tag-sm">PostgreSQL</span>
+              <span class="tag tag-sm">Slack API</span>
             </div>
           </div>
         </article>
 
-        <!-- Project Card 2 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="projects-grid" style="grid-template-columns: 1fr 1fr;">
+
         <article class="project-card">
-          <div class="project-image">
-            <img src="assets/images/project2.jpg" alt="Project 2" onerror="this.parentElement.classList.add('no-image')" />
-            <div class="project-overlay">
-              <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
-              <a href="#" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
           <div class="project-info">
-            <h3 class="project-title">Project Name</h3>
-            <p class="project-desc">
-              Brief description of what this project does and the problem it solves.
-              Mention key features or interesting technical challenges.
-            </p>
-            <div class="project-tags">
-              <span class="tag tag-sm">React</span>
-              <span class="tag tag-sm">Node.js</span>
-              <span class="tag tag-sm">REST API</span>
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <span class="tag tag-sm">02/2024 - Present</span>
             </div>
+            <h3 class="project-title">Master of Business Analytics</h3>
+            <p style="font-style:italic; margin-bottom:0.5rem;">Data Science &amp; Artificial Intelligence</p>
+            <p style="font-weight:600;">University of Colombo School of Computing</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem;">Colombo, Sri Lanka</p>
           </div>
         </article>
 
-        <!-- Project Card 3 -->
         <article class="project-card">
-          <div class="project-image">
-            <img src="assets/images/project3.jpg" alt="Project 3" onerror="this.parentElement.classList.add('no-image')" />
-            <div class="project-overlay">
-              <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
-              <a href="#" class="btn btn-sm btn-outline-light" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
           <div class="project-info">
-            <h3 class="project-title">Project Name</h3>
-            <p class="project-desc">
-              Brief description of what this project does and the problem it solves.
-              Mention key features or interesting technical challenges.
-            </p>
-            <div class="project-tags">
-              <span class="tag tag-sm">JavaScript</span>
-              <span class="tag tag-sm">CSS</span>
-              <span class="tag tag-sm">HTML</span>
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+              <span class="tag tag-sm">01/2014 - 09/2019</span>
             </div>
+            <h3 class="project-title">Bachelor Degree in Information Technology</h3>
+            <p style="font-weight:600;">Sri Lanka Institute of Information Technology</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem;">Malabe, Sri Lanka</p>
           </div>
         </article>
 
+      </div>
+
+      <div style="margin-top: 2rem;">
+        <h3 style="text-align:center; margin-bottom:1rem;">Honor Awards</h3>
+        <article class="project-card" style="max-width:600px; margin:0 auto;">
+          <div class="project-info">
+            <h3 class="project-title">Star Performer (01/2022 - 01/2023)</h3>
+            <p>HCL Technologies (Hindustan Computers Limited)</p>
+            <p style="color:var(--text-muted, #888); font-size:0.875rem;">Award for the best performance</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -184,32 +315,28 @@
             <div class="contact-icon">&#9993;</div>
             <div>
               <h4>Email</h4>
-              <!-- Replace with your email -->
-              <a href="mailto:your@email.com">your@email.com</a>
+              <a href="mailto:gigumbrajaguru@gmail.com">gigumbrajaguru@gmail.com</a>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">&#128279;</div>
             <div>
               <h4>LinkedIn</h4>
-              <!-- Replace with your LinkedIn URL -->
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+              <a href="https://linkedin.com/in/gigumbrajaguru" target="_blank" rel="noopener">linkedin.com/in/gigumbrajaguru</a>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">&#128025;</div>
             <div>
               <h4>GitHub</h4>
-              <!-- Replace with your GitHub URL -->
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+              <a href="https://github.com/gigumbrajaguru" target="_blank" rel="noopener">github.com/gigumbrajaguru</a>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">&#128205;</div>
             <div>
               <h4>Location</h4>
-              <!-- Replace with your location -->
-              <span>Your City, Country</span>
+              <span>Ganemulla, Gampaha, Sri Lanka</span>
             </div>
           </div>
         </div>
@@ -246,8 +373,7 @@
   <footer class="footer">
     <div class="container">
       <p>
-        <!-- Replace with your name -->
-        &copy; 2026 Your Name. Built with care.
+        &copy; 2026 Gigum Bandara Rajaguru. Built with care.
       </p>
       <div class="footer-links">
         <a href="#hero">Back to top</a>
