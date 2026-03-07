@@ -641,6 +641,10 @@ img { max-width: 100%; display: block; }
     justify-content: center;
   }
 
+  .hero-scroll-hint {
+    display: none;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 32px;
