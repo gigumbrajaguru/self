@@ -642,7 +642,14 @@ img { max-width: 100%; display: block; }
   }
 
   .hero-scroll-hint {
-    display: none;
+    opacity: 0.35;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    padding: 8px 16px;
+    bottom: 20px;
   }
 
   .about-grid {
