@@ -597,6 +597,93 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   Nav CV Button
+=========================== */
+.nav-cv-btn {
+  background: var(--clr-accent) !important;
+  color: var(--clr-white) !important;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 600 !important;
+  transition: background var(--transition), transform var(--transition) !important;
+}
+
+.nav-cv-btn:hover {
+  background: var(--clr-accent-hover) !important;
+  color: var(--clr-white) !important;
+  transform: translateY(-1px);
+}
+
+/* ===========================
+   Personality Section
+=========================== */
+.personality-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.personality-frame-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-surface);
+}
+
+.personality-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.personality-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: var(--clr-surface);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.personality-fallback.visible {
+  display: flex;
+}
+
+.personality-fallback-inner {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.personality-fallback-icon {
+  font-size: 3.5rem;
+}
+
+.personality-fallback-inner h3 {
+  font-size: 1.4rem;
+  color: var(--clr-white);
+}
+
+.personality-fallback-inner p {
+  color: var(--clr-text-muted);
+  max-width: 340px;
+}
+
+.personality-link-row {
+  margin-top: 4px;
+}
+
+/* ===========================
    Footer
 =========================== */
 .footer {
@@ -653,6 +740,12 @@ img { max-width: 100%; display: block; }
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .personality-frame-container {
+    height: 500px;
   }
 }
 

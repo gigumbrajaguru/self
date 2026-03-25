@@ -16,6 +16,27 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
+// Personality iframe — show fallback if blocked
+const personalityIframe = document.querySelector('.personality-iframe');
+const personalityFallback = document.getElementById('personalityFallback');
+if (personalityIframe && personalityFallback) {
+  personalityIframe.addEventListener('load', () => {
+    try {
+      // If we can access contentDocument, it loaded. If blocked, it may be empty.
+      const doc = personalityIframe.contentDocument || personalityIframe.contentWindow.document;
+      if (!doc || doc.body === null || doc.body.innerHTML === '') {
+        personalityFallback.classList.add('visible');
+      }
+    } catch {
+      // Cross-origin block — show fallback
+      personalityFallback.classList.add('visible');
+    }
+  });
+  personalityIframe.addEventListener('error', () => {
+    personalityFallback.classList.add('visible');
+  });
+}
+
 // Contact form — submits to FormSubmit (AJAX)
 const form = document.getElementById('contactForm');
 const formStatus = document.getElementById('form-status');
