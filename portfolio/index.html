@@ -551,6 +551,9 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
           </div>
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+          <input type="hidden" name="_template" value="table">
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
           <p id="form-status" class="form-note" style="display:none;"></p>
         </form>
