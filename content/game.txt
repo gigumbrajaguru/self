@@ -1,0 +1,66 @@
+# Rust-Based PC Game
+> A survival PC game set in a post-apocalyptic world, many years after the war between machines and magic.
+> Work in progress: these are my early design notes and they will change as development continues.
+
+## Character Creation
+
+### Character
+- Category: Player / NPC
+- Graphic assets: 3D
+- Creation flow: Loading screen → Character creation
+- Character slots: 4
+- Characters cannot be edited once creation is done
+
+### Attributes
+- Health: 100 points
+- Hunger: 100
+- Thirst: 100
+- Oxygen: 100
+- Temperature: 25° – 45°
+- Agility: variable (depends on food)
+- Strength: variable (50)
+- Intel: variable (50)
+- Stamina: pool size = Strength
+- Mana: pool size = Intel
+
+### What Attributes Do
+- Strength: damage, health regen, stamina pool size
+- Agility: stamina regen boost, sprint speed, hold time (climbing)
+- Intel: mana pool size
+
+### Appearance
+- Body type: male / female (female adds body shape and long hair options)
+- Customise: hair colour, eye colour, face shape, skin colour
+- Height: max 1 unit, min ½ unit
+
+## World Creation
+
+### Setting
+- World: post-apocalyptic, many years after the Machine vs Magic war
+- Seasons: summer, winter
+- Weather: windy, storms, heavy rain, acid rain, poison wind waves, heat waves
+
+### World Limits
+- Character maximum height: 1 unit
+- Top edge (maximum height): +1000, death ray
+- Bottom edge (maximum depth): −1000, red lava
+
+### Procedural Generation Map
+- Mountain peak: 750
+- Maximum structure height: 800
+- Open caves: +600 to −400
+- Deepest ocean: −500
+- Deepest cave: −900
+
+### Biome: Desert
+- Materials: sand, quicksand, hard sand, stone, sulfur, lava, cactus, short bush
+- Weather events: sandstorms
+- Structures: pyramids, ruins, tombs
+- Temperature: 40° – 55°
+- Biome depth: −100
+- Water pods: dry grass, palm and cactus trees
+
+### Biome: Wastelands
+- Materials: concrete powder, sulfur, lava pockets, dry soil, poisoned water, poisoned air, scrap yards, bones, crystal shards, mud pits
+- Temperature: 35° – 55°
+- Biome depth: 150
