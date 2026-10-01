@@ -1,4 +1,6 @@
-"""Render the story in content/game.txt into portfolio/game/index.html (run by the Pages workflow).
+"""Render content/game.txt into the site (run by the Pages workflow): the full story into
+portfolio/game/index.html, and the current development stage into the Ongoing Project
+section of portfolio/index.html.
 
 Text format, one entry per line (blank lines are ignored):
   # Title                    game name
@@ -18,8 +20,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "content" / "game.txt"
-PAGE = ROOT / "portfolio" / "game" / "index.html"
-MARKERS = re.compile(r"(<!-- game:start -->).*?(<!-- game:end -->)", re.S)
+GAME_PAGE = ROOT / "portfolio" / "game" / "index.html"
+HOME_PAGE = ROOT / "portfolio" / "index.html"
 KINDS = ("story", "layers", "progress")
 STATUSES = {"done": "Done", "now": "In progress", "next": "Planned"}
 
@@ -74,7 +76,21 @@ def parse(text):
             chapter["text"].append(line)
     if not page["title"] or not page["chapters"]:
         fail("needs a '# ' title and at least one '## ' chapter")
+    if not progress_steps(page):
+        fail("needs a '## ... | progress' chapter with '- status: ...' steps")
     return page
+
+
+def progress_steps(page):
+    return [step for chapter in page["chapters"] if chapter["kind"] == "progress" for step in chapter["steps"]]
+
+
+def summarise(steps):
+    """Meter fill (a step in progress counts as half done), a 'x of y done' label and the current steps."""
+    done = sum(step["status"] == "done" for step in steps)
+    now = [step["title"] for step in steps if step["status"] == "now"]
+    percent = round(100 * (done + 0.5 * len(now)) / len(steps))
+    return percent, f"{done} of {len(steps)} milestones done", now
 
 
 def slug(text):
@@ -149,16 +165,14 @@ def render(page):
             "    </div>",
         ]
         if kind == "progress":
-            steps = chapter["steps"]
-            if not steps:
-                fail(f"progress chapter '{chapter['title']}' has no '- status: ...' steps")
-            done = sum(step["status"] == "done" for step in steps)
+            percent, label, now = summarise(chapter["steps"])
+            if now:
+                label += f" · Now: {', '.join(now)}"
             out += [
-                f'    <div class="game-meter" role="img" aria-label="{done} of {len(steps)} milestones done">'
-                f'<span style="width:{round(100 * done / len(steps))}%"></span></div>',
-                f'    <p class="game-meter-label">{done} of {len(steps)} milestones done</p>',
+                f'    <div class="game-meter" role="img" aria-label="{esc(label)}"><span style="width:{percent}%"></span></div>',
+                f'    <p class="game-meter-label">{esc(label)}</p>',
                 '    <ol class="game-progress">',
-                *(line for step in steps for line in render_step(step)),
+                *(line for step in chapter["steps"] for line in render_step(step)),
                 "    </ol>",
             ]
         elif chapter["cards"]:
@@ -174,13 +188,34 @@ def render(page):
     return "\n".join(line for line in out if line)
 
 
+def render_stage(page):
+    steps = progress_steps(page)
+    percent, label, now = summarise(steps)
+    upcoming = [step["title"] for step in steps if step["status"] == "next"]
+    heading, stage = ("Current stage", now[0]) if now else ("Up next", upcoming[0]) if upcoming else ("Status", "Complete")
+    return "\n".join([
+        '            <div class="ongoing-stage">',
+        f'              <p class="ongoing-stage-label">{heading}</p>',
+        f'              <p class="ongoing-stage-name">{esc(stage)}</p>',
+        f'              <div class="ongoing-meter" role="img" aria-label="{esc(label)}"><span style="width:{percent}%"></span></div>',
+        f'              <p class="ongoing-stage-note">{esc(label)}</p>',
+        "            </div>",
+    ])
+
+
+def fill(path, name, content):
+    markers = re.compile(rf"(<!-- {name}:start -->).*?(<!-- {name}:end -->)", re.S)
+    text = path.read_text(encoding="utf-8")
+    if not markers.search(text):
+        fail(f"{path.relative_to(ROOT)} is missing the {name}:start / {name}:end markers")
+    path.write_text(markers.sub(lambda m: f"{m[1]}\n{content}\n{m[2]}", text), encoding="utf-8")
+    print(f"build_game: rendered {SOURCE.relative_to(ROOT)} into {path.relative_to(ROOT)}")
+
+
 def main():
-    page = PAGE.read_text(encoding="utf-8")
-    if not MARKERS.search(page):
-        fail(f"{PAGE.relative_to(ROOT)} is missing the game:start / game:end markers")
-    content = render(parse(SOURCE.read_text(encoding="utf-8")))
-    PAGE.write_text(MARKERS.sub(lambda m: f"{m[1]}\n{content}\n{m[2]}", page), encoding="utf-8")
-    print(f"build_game: rendered {SOURCE.relative_to(ROOT)} into {PAGE.relative_to(ROOT)}")
+    page = parse(SOURCE.read_text(encoding="utf-8"))
+    fill(GAME_PAGE, "game", render(page))
+    fill(HOME_PAGE, "game-stage", render_stage(page))
 
 
 if __name__ == "__main__":
