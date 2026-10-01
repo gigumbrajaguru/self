@@ -204,6 +204,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   color: var(--clr-white);
   letter-spacing: -0.3px;
+  white-space: nowrap;
 }
 
 .nav-logo:hover { color: var(--clr-accent); }
@@ -403,6 +404,8 @@ img { max-width: 100%; display: block; }
   gap: 28px;
 }
 
+.grid-2 { grid-template-columns: 1fr 1fr; }
+
 .project-card {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
@@ -532,10 +535,13 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
 }
 
+.contact-grid > * { min-width: 0; }
+
 .contact-item a,
 .contact-item span {
   color: var(--clr-text);
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
 }
 
 .contact-item a:hover { color: var(--clr-accent); }
@@ -775,7 +781,8 @@ img { max-width: 100%; display: block; }
     height: 160px;
   }
 
-  .projects-grid {
+  .projects-grid,
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 

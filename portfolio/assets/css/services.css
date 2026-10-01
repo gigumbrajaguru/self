@@ -279,4 +279,5 @@
   .svc-hero { padding: calc(var(--nav-height) + 48px) 0 56px; }
   .svc-note { padding: 24px 20px; }
   .svc-cta { padding: 40px 20px; }
+  .svc-cta .btn { max-width: 100%; white-space: normal; }
 }
