@@ -3,11 +3,13 @@ const svcDialog = document.getElementById('svcDialog');
 const requestForm = document.getElementById('svcRequestForm');
 const requestStatus = document.getElementById('svcRequestStatus');
 const dialogActions = document.getElementById('svcDialogActions');
+const meetingLink = document.getElementById('svcDialogMeeting');
 const dialogParts = {
   icon: document.getElementById('svcDialogIcon'),
   title: document.getElementById('svcDialogTitle'),
   desc: document.getElementById('svcDialogDesc'),
   body: document.getElementById('svcDialogBody'),
+  price: document.getElementById('svcDialogPrice'),
 };
 
 function showRequestForm() {
@@ -26,12 +28,19 @@ function openDialog(card) {
     dialogParts.title.textContent = card.querySelector('.project-title').textContent;
     dialogParts.desc.replaceChildren(...copy('.project-desc'));
     dialogParts.body.replaceChildren(card.querySelector('.svc-details').content.cloneNode(true));
+    // Gigs carry a starting price and offer a meeting; other services are quoted after analysis
+    const price = card.dataset.price;
+    dialogParts.price.textContent = price
+      ? `Pricing: ${price}. The final price depends on your scope.`
+      : 'Pricing: personalised. You\'ll get a quote after I analyse your requirements.';
+    meetingLink.hidden = !card.hasAttribute('data-meeting');
   } else {
     dialogParts.title.textContent = 'Request a Service';
     dialogParts.desc.textContent = 'Tell me what you need and I\'ll get back to you with a quote.';
     dialogParts.body.replaceChildren();
   }
   dialogParts.icon.hidden = !card;
+  dialogParts.price.hidden = !card;
   requestForm.elements.service.value = card ? dialogParts.title.textContent : '';
   dialogActions.hidden = !card;
   requestForm.hidden = !!card;

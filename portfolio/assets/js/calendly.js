@@ -1,10 +1,33 @@
-// Calendly: popup for every [data-calendly] link (no floating badge)
+// Calendly popup for every [data-calendly] link; the widget loads on first click (no floating badge)
 const CALENDLY_URL = 'https://calendly.com/gigumbrajaguru/15min';
+let calendlyReady;
 
-// Falls back to opening the Calendly page when the widget script is unavailable
-document.addEventListener('click', (e) => {
+function loadCalendly() {
+  calendlyReady ??= new Promise((resolve, reject) => {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'https://assets.calendly.com/assets/external/widget.css';
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.append(css, script);
+  });
+  return calendlyReady;
+}
+
+document.addEventListener('click', async (e) => {
   const link = e.target.closest('[data-calendly]');
-  if (!link || !window.Calendly) return;
+  if (!link) return;
   e.preventDefault();
-  Calendly.initPopupWidget({ url: CALENDLY_URL });
+  // A modal <dialog> stays above everything else, so close it before the popup opens
+  link.closest('dialog')?.close();
+  try {
+    await loadCalendly();
+    Calendly.initPopupWidget({ url: CALENDLY_URL });
+  } catch {
+    // Widget blocked or offline: go to the Calendly page instead
+    calendlyReady = null;
+    location.assign(link.href);
+  }
 });
