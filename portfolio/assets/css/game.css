@@ -288,6 +288,8 @@
   border-radius: var(--radius-sm);
 }
 
+.game-biomes .is-wide { grid-column: span 2; }
+
 .game-biomes h4 {
   margin-bottom: 4px;
   color: var(--clr-white);
@@ -416,6 +418,7 @@
   .game-region summary { padding: 14px 16px; gap: 12px; }
   .game-region-intro { margin: 0 16px 14px; }
   .game-biomes { padding: 0 16px 16px; }
+  .game-biomes .is-wide { grid-column: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
