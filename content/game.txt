@@ -56,11 +56,93 @@ Tunnels that reach almost to the bottom of the world, for those brave enough to 
 The floor of the world. Nothing comes back from below.
 
 ## Lands You'll Cross
-The surface is split into biomes, each with its own ground, weather and dangers. The first two are already shaped.
+The surface is split into biomes, each with its own ground, weather and dangers. The first two are already shaped, and they're the lands the war hit hardest.
 ### 🏜️ | The Desert
 Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and pockets of lava. Cactus and short bushes are the only cover, and sandstorms can swallow the way home. Hidden among the dunes wait pyramids, ruins and tombs, and rare water pods where dry grass, palms and cactus trees still grow.
 ### ☢️ | The Wastelands
 What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
+
+## Every Corner of the World | regions
+The Desert and the Wastelands are only the beginning. The war touched every land differently: some froze, some drowned, some burned and some were torn right out of the ground. Every one of them is waiting to be explored.
+### ❄️ | The Frozen North
+Where frost magic broke loose and never stopped. The cold drains body heat fast, so fire and shelter decide who makes it through the night.
+- Snowfields — Flat white silence, broken only by the frozen wrecks of war machines.
+- Ice Spires — Towers of ice that burst from the ground where frost spells struck.
+- Snowbound Pines — Dark pine forests under heavy snow: shelter from the wind, but little food.
+- Frozen Shore — Grey sand and ice where the sea meets the cold.
+- Frost Grove — Quiet hillside groves buried in powder snow.
+- Snow Slopes — Steep mountainsides where one wrong step starts a slide.
+- Jagged Peaks — Knife-edged summits that drain a climber's stamina.
+- Glacier Crowns — Mountaintops locked under packed ice that never melts.
+- Frozen Rivers — The fastest roads through the north, as long as the ice holds.
+- Frozen Sea — Icebergs drifting over black water.
+- Deep Frozen Sea — Freezing depths beneath the ice, where oxygen runs out fast.
+### 🌲 | The Cold Wilds
+Windswept highlands and old forests that the war mostly passed by. Wood and game are plentiful, but so are the things that hunt them.
+- Pine Taiga — Cool spruce forests full of game and timber.
+- Ancient Pines — Giant pines that were already old before the war began.
+- Elder Spruce Woods — Towering spruce where light barely reaches the ground.
+- Windswept Hills — Bare hills where the wind never rests.
+- Gravel Hills — Loose stone slopes still scarred by old artillery.
+- Wind-Bent Woods — Trees bent sideways by a hundred years of storms.
+- Stone Shore — Rocky coasts battered by grey waves.
+- Stone Peaks — Bare summits of cold grey rock.
+- Cold Sea — Chilly waters rich with fish.
+- Deep Cold Sea — Dark trenches where wrecked warships rest.
+### 🌿 | The Green Remnants
+Lands where life fought back. Food and clean water are easier to find here, which is exactly why survivors fight over them.
+- Plains — Open grassland and the easiest place to start over.
+- Sunflower Fields — Golden fields that somehow survived the fire.
+- Forest — Mixed woods with timber, berries and cover.
+- Wildflower Woods — Forest floors carpeted in flowers, with traces of old magic in the soil.
+- Birch Woods — Pale, quiet birch forests.
+- Tall Birch Woods — Ancient birches that stretch far above the canopy.
+- Darkwood — A canopy so thick that midday feels like night, and things hunt in the shade.
+- Ashen Grove — Grey, drained trees where the war pulled the magic out of the land.
+- Highland Meadow — Calm mountain meadows full of flowers and bees.
+- Cherry Blossom Hills — Pink-blossomed slopes, the most peaceful place left in the world.
+- Fungal Isles — Remote islands of giant mushrooms, strangely untouched by the war's monsters.
+- Swamp — Murky water and twisted trees, poisoned in places.
+- Mangrove Marsh — Tangled roots over thick mud that slows every step.
+- Overgrown Jungle — Vines and giant trees that swallowed whole cities.
+- Jungle Edge — Where the jungle thins out into open ground.
+- Bamboo Thickets — Dense bamboo forests that are hard to cross and easy to get lost in.
+### 🏜️ | The Sunscorched South
+The hottest lands, where the machine armies fought longest. Beyond the Desert and the Wastelands, the heat bakes everything it touches.
+- Savanna — Dry grasslands under flat-topped trees.
+- Savanna Plateau — Raised grasslands with views across the burning south.
+- Shattered Savanna — Wild, broken ground where blasts pushed the earth into towers.
+- Red Badlands — Layered red clay canyons with old mines dug deep inside.
+- Wooded Mesa — Badlands crowned with stubborn, dry woodland.
+- Eroded Spires — Clay spires carved thin by years of acid rain.
+### 🌊 | The Drowned World
+The seas rose after the war, swallowing coastlines and cities. Everything below the surface is a race against your oxygen.
+- Beaches — Sandy coasts littered with what the tide brings back.
+- Rivers — Lifelines of fresh water running through every land.
+- Open Sea — Endless water with sunken ruins below.
+- Deep Sea — Dark depths where the remains of naval machines lie.
+- Mild Sea — Gentle, warm-ish waters full of life.
+- Deep Mild Sea — Deeper waters with ruins waiting to be found.
+- Coral Sea — Bright coral reefs growing over the wrecks of the war.
+### 🕳️ | Beneath the Surface
+The world goes down a long way. The deeper you go, the less air you have and the stranger things get.
+- Dripstone Caverns — Caves where stalactites hang like spears.
+- Glowroot Caverns — Lush underground gardens lit by glowing roots.
+- The Silent Deep — The deepest caves, where something listens for every sound you make.
+### 🌋 | The Molten Deep
+Close to the red lava at the bottom of the world, heat and leftover magic twisted the land into something else entirely.
+- Ember Wastes — Red rock, fire pools and air that burns to breathe.
+- Valley of Lost Souls — Blue-fire valleys of grasping sand, scattered with the giant bones of the fallen.
+- Crimson Woods — Forests of red fungal trees that pulse like something alive.
+- Twisted Woods — Teal fungal forests warped by stray magic.
+- Basalt Deltas — Ash-choked fields of black basalt pillars.
+### ☄️ | The Shattered Sky
+When the war ended, magic tore pieces of the world loose. They still drift high above the land, just beneath the death ray.
+- The Last Isle — A pale island hanging in darkness, guarded by something ancient.
+- Sky Highlands — The tallest of the drifting lands, with ruined towers of the old mages.
+- Sky Midlands — Rolling stone fields floating in the void.
+- Sky Barrens — Empty, broken edges of the floating world.
+- Drifting Islets — Small fragments of land scattered across the sky.
 
 ## Development Progress | progress
 Lini: Huma is in early development. Here's how far the journey has come and what's next.
@@ -68,5 +150,6 @@ Lini: Huma is in early development. Here's how far the journey has come and what
 - now: Character creation — Building the survivor creator: four character slots, appearance, survival needs and attributes
 - next: World creation — A procedurally generated 3D world from the death ray to the red lava
 - next: First biomes — The Desert and the Wastelands
+- next: Every corner of the world — More than sixty lands across eight regions, from the Frozen North to the Shattered Sky
 - next: Seasons and weather — Summer, winter, storms, acid rain and heat waves
 - next: First playable build — Stepping into the world for the first time
