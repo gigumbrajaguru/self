@@ -1,66 +1,73 @@
-# Rust-Based PC Game
-> A survival PC game set in a post-apocalyptic world, many years after the war between machines and magic.
-> Work in progress: these are my early design notes and they will change as development continues.
+# Lini: Huma
+> A 3D survival game for PC · In development
+Long after machines and magic went to war, the world still burns. Now it's your turn to survive what they left behind.
 
-## Character Creation
+## The World After the War
+Many years ago, machines and magic fought a war that nobody won. Cities fell, the skies turned hostile and the land itself was poisoned. Lini: Huma begins long after the last battle, in the broken world the war left behind.
+The world still turns through its seasons, but the weather is no longer just weather. Every journey depends on reading the sky.
+### ☀️ | Summer and Winter
+Two seasons that change how far you can travel, what you need to carry and how long you can last out there.
+### 🌪️ | Wind and Storms
+Strong winds, storms and heavy rain roll across the land, hiding the path ahead and slowing every step.
+### ☣️ | Acid Rain and Poison Winds
+Some rain burns. Some winds carry poison in waves. When they come, you'd better already know where to hide.
+### 🔥 | Heat Waves
+Days so hot that water runs out faster than you can find it. Survivors learn to travel when the heat breaks.
 
-### Character
-- Category: Player / NPC
-- Graphic assets: 3D
-- Creation flow: Loading screen → Character creation
-- Character slots: 4
-- Characters cannot be edited once creation is done
+## Becoming a Survivor
+Every journey starts with a survivor. You have four character slots, and every survivor you create is yours for good. Once creation is done there's no going back, so every choice matters.
+Choose male or female, then shape who you are: hair colour, eye colour, face shape, skin colour, body shape and long hair. Some survivors stand tall, others are half their size.
+Staying alive means watching your body as closely as the horizon.
+### ❤️ | Health
+Your life. Lose it all and the wasteland wins.
+### 🍖 | Hunger
+Food keeps you moving, and what you eat shapes how agile you are.
+### 💧 | Thirst
+Clean water is rare in a poisoned world. Every drop counts.
+### 🫁 | Oxygen
+Deep water, buried caves and poisoned air will test how long you can hold on.
+### 🌡️ | Body Temperature
+Too hot or too cold and your body starts to fail. The seasons and weather never stop pushing.
 
-### Attributes
-- Health: 100 points
-- Hunger: 100
-- Thirst: 100
-- Oxygen: 100
-- Temperature: 25° – 45°
-- Agility: variable (depends on food)
-- Strength: variable (50)
-- Intel: variable (50)
-- Stamina: pool size = Strength
-- Mana: pool size = Intel
+## Three Paths to Power
+How you survive depends on how you grow. Three attributes shape every survivor: Strength powers your stamina, Intel powers your mana, and Agility is fed by the food you find.
+### 💪 | Strength
+Hit harder, recover health faster and carry a deeper pool of stamina for the long fights.
+### 🏃 | Agility
+Sprint faster, hold on longer while climbing and recover stamina sooner. Eat well and you'll move like the wind.
+### 🔮 | Intel
+Magic didn't die in the war. The sharper your mind, the deeper your pool of mana.
 
-### What Attributes Do
-- Strength: damage, health regen, stamina pool size
-- Agility: stamina regen boost, sprint speed, hold time (climbing)
-- Intel: mana pool size
+## From the Death Ray to the Red Lava | layers
+The world of Lini: Huma is procedurally generated, so no two worlds are the same, and it reaches far in both directions. At the very top, a death ray seals the sky. Far below, there's nothing but red lava. Everything in between is yours to explore.
+### ☄️ | The Death Ray
+The roof of the world. Climb too high and nothing survives.
+### 🏙️ | Towering Ruins
+What's left of the old world. Some ruins rise higher than the mountains themselves.
+### 🏔️ | Mountain Peaks
+The highest natural ground, with a view across everything the war destroyed.
+### 🕳️ | Open Caves
+Caves that open to the sky and run from the highlands deep beneath the surface.
+### 🌊 | The Deep Ocean
+Dark water that sinks far below the land. Watch your oxygen.
+### ⛏️ | The Deepest Caves
+Tunnels that reach almost to the bottom of the world, for those brave enough to follow them.
+### 🌋 | The Red Lava
+The floor of the world. Nothing comes back from below.
 
-### Appearance
-- Body type: male / female (female adds body shape and long hair options)
-- Customise: hair colour, eye colour, face shape, skin colour
-- Height: max 1 unit, min ½ unit
+## Lands You'll Cross
+The surface is split into biomes, each with its own ground, weather and dangers. The first two are already shaped.
+### 🏜️ | The Desert
+Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and pockets of lava. Cactus and short bushes are the only cover, and sandstorms can swallow the way home. Hidden among the dunes wait pyramids, ruins and tombs, and rare water pods where dry grass, palms and cactus trees still grow.
+### ☢️ | The Wastelands
+What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
 
-## World Creation
-
-### Setting
-- World: post-apocalyptic, many years after the Machine vs Magic war
-- Seasons: summer, winter
-- Weather: windy, storms, heavy rain, acid rain, poison wind waves, heat waves
-
-### World Limits
-- Character maximum height: 1 unit
-- Top edge (maximum height): +1000, death ray
-- Bottom edge (maximum depth): −1000, red lava
-
-### Procedural Generation Map
-- Mountain peak: 750
-- Maximum structure height: 800
-- Open caves: +600 to −400
-- Deepest ocean: −500
-- Deepest cave: −900
-
-### Biome: Desert
-- Materials: sand, quicksand, hard sand, stone, sulfur, lava, cactus, short bush
-- Weather events: sandstorms
-- Structures: pyramids, ruins, tombs
-- Temperature: 40° – 55°
-- Biome depth: −100
-- Water pods: dry grass, palm and cactus trees
-
-### Biome: Wastelands
-- Materials: concrete powder, sulfur, lava pockets, dry soil, poisoned water, poisoned air, scrap yards, bones, crystal shards, mud pits
-- Temperature: 35° – 55°
-- Biome depth: 150
+## Development Progress | progress
+Lini: Huma is in its design stage. Here's how far the journey has come.
+- done: The world and its story — A post-apocalyptic world after the Machine vs Magic war, with seasons and deadly weather
+- done: Character creation — Four character slots, appearance options and permanent survivors
+- done: Survival and attributes — Health, hunger, thirst, oxygen and temperature, shaped by Strength, Agility and Intel
+- done: World layout — A procedurally generated 3D world from the death ray to the red lava
+- done: First biomes — The Desert and the Wastelands
+- next: More biomes — New lands, new dangers
+- next: First playable build — Stepping into the world for the first time
