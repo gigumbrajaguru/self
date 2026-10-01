@@ -1,0 +1,326 @@
+/* ===========================
+   Lini: Huma game page — extends style.css and services.css
+=========================== */
+:root {
+  --game-ember: #ff7a3d;
+  --game-ember-hover: #ff6420;
+  --game-ray: #ff4d6d;
+  --game-glow: rgba(255, 122, 61, 0.12);
+}
+
+.btn-primary,
+.nav-cv-btn {
+  background: var(--game-ember) !important;
+  border-color: var(--game-ember);
+}
+
+.btn-primary:hover,
+.nav-cv-btn:hover {
+  background: var(--game-ember-hover) !important;
+  border-color: var(--game-ember-hover);
+  box-shadow: 0 8px 20px rgba(255, 122, 61, 0.3);
+}
+
+/* Hero: a death ray above, red lava below */
+.game-hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-height) + 72px) 0 96px;
+  text-align: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255, 77, 109, 0.22), transparent 70%),
+    radial-gradient(ellipse 80% 45% at 50% 100%, rgba(255, 106, 0, 0.24), transparent 70%),
+    radial-gradient(ellipse 60% 60% at 50% 50%, rgba(124, 106, 247, 0.1), transparent 70%),
+    var(--clr-bg);
+}
+
+.game-hero::before,
+.game-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.game-hero::before {
+  top: var(--nav-height);
+  background: linear-gradient(90deg, transparent, var(--game-ray), transparent);
+  box-shadow: 0 0 28px 6px rgba(255, 77, 109, 0.45);
+}
+
+.game-hero::after {
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, var(--game-ember), transparent);
+  box-shadow: 0 0 36px 10px rgba(255, 106, 0, 0.45);
+}
+
+.game-kicker,
+.game-chapter-label {
+  color: var(--game-ember);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.game-title {
+  margin: 16px 0 24px;
+  font-size: clamp(3.2rem, 11vw, 7rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  background: linear-gradient(180deg, #ffffff 0%, #ffd2a8 50%, var(--game-ember) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.game-tagline {
+  max-width: 620px;
+  margin: 0 auto 36px;
+  color: var(--clr-text);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.88;
+}
+
+.game-hero .hero-actions { justify-content: center; }
+
+/* Chapters */
+.game-chapter-label { text-align: center; margin-bottom: 10px; }
+
+.game-chapter-title {
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--clr-white);
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.game-prose {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.game-prose p {
+  color: var(--clr-text-muted);
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.game-prose p + p { margin-top: 16px; }
+
+.game-icon {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background: var(--clr-surface);
+  border: 1px solid rgba(255, 122, 61, 0.3);
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 100px var(--game-glow);
+}
+
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  padding: 28px 24px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--game-ember);
+  box-shadow: var(--shadow);
+}
+
+.game-card .game-icon { margin-bottom: 16px; }
+
+.game-card h3,
+.game-layer h3,
+.game-step h3 {
+  margin-bottom: 6px;
+  color: var(--clr-white);
+  font-size: 1.06rem;
+}
+
+.game-card p,
+.game-layer p,
+.game-step p {
+  color: var(--clr-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* World layers, from the death ray down to the red lava */
+.game-layers {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.game-layers::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  bottom: 30px;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--game-ray) 0%, #b8c7ff 22%, #c9b38a 45%, #4a90c2 65%, #5b4a8a 82%, #ff6a00 100%);
+}
+
+.game-layer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0;
+}
+
+.game-layer > div {
+  flex: 1;
+  padding: 16px 20px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+}
+
+.game-layer:first-child > div { border-color: rgba(255, 77, 109, 0.5); }
+.game-layer:last-child > div { border-color: rgba(255, 106, 0, 0.5); }
+
+/* Development progress */
+.game-meter {
+  max-width: 720px;
+  height: 8px;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: 100px;
+}
+
+.game-meter span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--game-ray), var(--game-ember));
+  border-radius: inherit;
+}
+
+.game-meter-label {
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--clr-text-muted);
+  font-size: 0.85rem;
+}
+
+.game-progress {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.game-progress::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--clr-border);
+}
+
+.game-step {
+  position: relative;
+  padding: 0 0 28px 44px;
+}
+
+.game-step:last-child { padding-bottom: 0; }
+
+.game-step::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--clr-bg-alt);
+  border: 2px solid var(--clr-border);
+}
+
+.game-step.is-done::before {
+  background: var(--game-ember);
+  border-color: var(--game-ember);
+  box-shadow: 0 0 12px rgba(255, 122, 61, 0.55);
+}
+
+.game-step.is-now::before {
+  border-color: var(--game-ember);
+  animation: game-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes game-pulse {
+  50% { box-shadow: 0 0 0 6px rgba(255, 122, 61, 0.2); }
+}
+
+.game-step-status {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 10px;
+  color: var(--clr-text-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid var(--clr-border);
+  border-radius: 100px;
+}
+
+.is-done .game-step-status,
+.is-now .game-step-status {
+  color: var(--game-ember);
+  background: var(--game-glow);
+  border-color: rgba(255, 122, 61, 0.4);
+}
+
+/* Support */
+.support-panel {
+  max-width: 420px;
+  margin: 28px auto 0;
+}
+
+.support-panel .form-note { margin-bottom: 12px; }
+
+#support .svc-cta {
+  background: linear-gradient(135deg, rgba(255, 122, 61, 0.16), rgba(124, 106, 247, 0.06));
+}
+
+@media (max-width: 640px) {
+  .game-hero { min-height: 80vh; padding: calc(var(--nav-height) + 48px) 0 72px; }
+  .game-tagline { font-size: 1.05rem; }
+  .game-prose p { font-size: 1rem; }
+  .game-layer { gap: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-step.is-now::before { animation: none; }
+}
