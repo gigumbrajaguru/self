@@ -40,7 +40,7 @@ if (personalityIframe && personalityFallback) {
 // Contact form — submits to FormSubmit (AJAX)
 const form = document.getElementById('contactForm');
 const formStatus = document.getElementById('form-status');
-form.addEventListener('submit', async (e) => {
+form?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
