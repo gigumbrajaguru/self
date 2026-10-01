@@ -9,8 +9,10 @@ Text format, one entry per line (blank lines are ignored):
                              before its first card, otherwise in the current card
   ## Heading                 story chapter, numbered automatically
   ## Heading | layers        chapter whose cards stack from the top of the world to the bottom
+  ## Heading | regions       chapter whose cards are expandable regions listing their biomes
   ## Heading | progress      development progress (not numbered)
   ### Icon | Title           card in the current chapter (the icon is optional)
+  - Name — details           biome in the current region card
   - done: Title — details    progress step; the status is done, now or next
 """
 import html
@@ -22,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "content" / "game.txt"
 GAME_PAGE = ROOT / "portfolio" / "game" / "index.html"
 HOME_PAGE = ROOT / "portfolio" / "index.html"
-KINDS = ("story", "layers", "progress")
+KINDS = ("story", "layers", "regions", "progress")
 STATUSES = {"done": "Done", "now": "In progress", "next": "Planned"}
 
 
@@ -49,9 +51,9 @@ def parse(text):
             continue
         if line.startswith("### "):
             if not chapter or chapter["kind"] == "progress":
-                fail("a '### ' card needs a story or layers chapter above it", number)
+                fail("a '### ' card needs a story, layers or regions chapter above it", number)
             icon, title = split_pipe(line[4:])
-            chapter["cards"].append({"icon": icon, "title": title, "text": []})
+            chapter["cards"].append({"icon": icon, "title": title, "text": [], "items": []})
         elif line.startswith("## "):
             title, kind = line[3:].partition(" | ")[::2]
             kind = kind.strip() or "story"
@@ -62,6 +64,11 @@ def parse(text):
             page["title"] = line[2:]
         elif line.startswith("> "):
             page["kicker"] = line[2:]
+        elif line.startswith("- ") and chapter and chapter["kind"] == "regions":
+            if not chapter["cards"]:
+                fail("a '- Name — details' biome needs a '### ' region card above it", number)
+            name, _, details = line[2:].partition(" — ")
+            chapter["cards"][-1]["items"].append({"title": name, "text": details})
         elif line.startswith("- "):
             status, sep, rest = line[2:].partition(": ")
             if not chapter or chapter["kind"] != "progress" or not sep or status not in STATUSES:
@@ -101,8 +108,12 @@ def paragraphs(lines, indent):
     return [f"{indent}<p>{esc(line)}</p>" for line in lines]
 
 
+def icon_html(card):
+    return f'<span class="game-icon" aria-hidden="true">{esc(card["icon"])}</span>' if card["icon"] else ""
+
+
 def render_card(card, kind):
-    icon = f'<span class="game-icon" aria-hidden="true">{esc(card["icon"])}</span>' if card["icon"] else ""
+    icon = icon_html(card)
     if kind == "layers":
         return [
             f'        <li class="game-layer">{icon}<div>',
@@ -115,6 +126,19 @@ def render_card(card, kind):
         f'          <h3>{esc(card["title"])}</h3>',
         *paragraphs(card["text"], "          "),
         "        </article>",
+    ]
+
+
+def render_region(card, open_):
+    return [
+        f'      <details class="game-region"{" open" if open_ else ""}>',
+        f'        <summary>{icon_html(card)}<span class="game-region-head"><h3>{esc(card["title"])}</h3>'
+        f'<span class="game-region-count">{len(card["items"])} lands</span></span></summary>',
+        *(f'        <p class="game-region-intro">{esc(line)}</p>' for line in card["text"]),
+        '        <ul class="game-biomes">',
+        *(f'          <li><h4>{esc(item["title"])}</h4><p>{esc(item["text"])}</p></li>' for item in card["items"]),
+        "        </ul>",
+        "      </details>",
     ]
 
 
@@ -174,6 +198,14 @@ def render(page):
                 '    <ol class="game-progress">',
                 *(line for step in chapter["steps"] for line in render_step(step)),
                 "    </ol>",
+            ]
+        elif kind == "regions":
+            cards = chapter["cards"]
+            out += [
+                f'    <p class="game-regions-total">{sum(len(c["items"]) for c in cards)} lands across {len(cards)} regions</p>',
+                '    <div class="game-regions">',
+                *(line for i, card in enumerate(cards) for line in render_region(card, i == 0)),
+                "    </div>",
             ]
         elif chapter["cards"]:
             tag = "ol" if kind == "layers" else "div"
