@@ -55,15 +55,19 @@ Tunnels that reach almost to the bottom of the world, for those brave enough to 
 ### 🌋 | The Red Lava
 The floor of the world. Nothing comes back from below.
 
-## Lands You'll Cross
-The surface is split into biomes, each with its own ground, weather and dangers. The first two are already shaped, and they're the lands the war hit hardest.
-### 🏜️ | The Desert
-Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and pockets of lava. Cactus and short bushes are the only cover, and sandstorms can swallow the way home. Hidden among the dunes wait pyramids, ruins and tombs, and rare water pods where dry grass, palms and cactus trees still grow.
-### ☢️ | The Wastelands
-What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
-
 ## Every Corner of the World | regions
-The Desert and the Wastelands are only the beginning. The war touched every land differently: some froze, some drowned, some burned and some were torn right out of the ground. Every one of them is waiting to be explored.
+The surface is split into biomes, each with its own ground, weather and dangers. The first two, the Desert and the Wastelands, are already shaped, and they're the lands the war hit hardest.
+They're only the beginning. The war touched every land differently: some froze, some drowned, some burned and some were torn right out of the ground. Every one of them is waiting to be explored.
+### 🏜️ | The Sunscorched South
+The hottest lands, where the machine armies fought longest and the heat bakes everything it touches.
+- The Desert — Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and pockets of lava. Cactus and short bushes are the only cover, and sandstorms can swallow the way home. Hidden among the dunes wait pyramids, ruins and tombs, and rare water pods where dry grass, palms and cactus trees still grow.
+- The Wastelands — What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
+- Savanna — Dry grasslands under flat-topped trees.
+- Savanna Plateau — Raised grasslands with views across the burning south.
+- Shattered Savanna — Wild, broken ground where blasts pushed the earth into towers.
+- Red Badlands — Layered red clay canyons with old mines dug deep inside.
+- Wooded Mesa — Badlands crowned with stubborn, dry woodland.
+- Eroded Spires — Clay spires carved thin by years of acid rain.
 ### ❄️ | The Frozen North
 Where frost magic broke loose and never stopped. The cold drains body heat fast, so fire and shelter decide who makes it through the night.
 - Snowfields — Flat white silence, broken only by the frozen wrecks of war machines.
@@ -107,14 +111,6 @@ Lands where life fought back. Food and clean water are easier to find here, whic
 - Overgrown Jungle — Vines and giant trees that swallowed whole cities.
 - Jungle Edge — Where the jungle thins out into open ground.
 - Bamboo Thickets — Dense bamboo forests that are hard to cross and easy to get lost in.
-### 🏜️ | The Sunscorched South
-The hottest lands, where the machine armies fought longest. Beyond the Desert and the Wastelands, the heat bakes everything it touches.
-- Savanna — Dry grasslands under flat-topped trees.
-- Savanna Plateau — Raised grasslands with views across the burning south.
-- Shattered Savanna — Wild, broken ground where blasts pushed the earth into towers.
-- Red Badlands — Layered red clay canyons with old mines dug deep inside.
-- Wooded Mesa — Badlands crowned with stubborn, dry woodland.
-- Eroded Spires — Clay spires carved thin by years of acid rain.
 ### 🌊 | The Drowned World
 The seas rose after the war, swallowing coastlines and cities. Everything below the surface is a race against your oxygen.
 - Beaches — Sandy coasts littered with what the tide brings back.
@@ -143,6 +139,28 @@ When the war ended, magic tore pieces of the world loose. They still drift high 
 - Sky Midlands — Rolling stone fields floating in the void.
 - Sky Barrens — Empty, broken edges of the floating world.
 - Drifting Islets — Small fragments of land scattered across the sky.
+
+## Giants and Strangers | groups
+You're not the only thing still moving out there. The war left giants behind: machines that never stopped fighting and magic that never stopped burning. Between them, other survivors are trying to make it through, just like you.
+### 👑 | World Bosses
+Most of them rule a corner of the world, and one never stops moving. Learn their patterns, bring the right gear and pick your moment, because none of them fight fair.
+- The Storm Engine — A weather machine built to drown the mages' cities. It still roams the world, dragging storms, acid rain and poison winds behind it.
+- The Dune Titan — A siege machine buried in the Desert since the last battle. When sandstorms strip the dunes away, it wakes and walks again.
+- The Scrap Sovereign — A war machine that never stopped repairing itself. It pulls the scrap yards of the Wastelands into its body and keeps growing.
+- The Rimebound Archmage — A war mage frozen inside the spell that raised the Ice Spires, and still casting it.
+- The Drowned Dreadnought — Most warships in the deep are wrecks. This one still patrols the Deep Sea, its guns turned on anything floating above.
+- The Listener — The thing in the Silent Deep. Blind and enormous, it hunts by sound alone, so the deeper you go, the quieter you'd better be.
+- The Bone Colossus — Not every giant in the Valley of Lost Souls is at rest. Blue fire pulls one back together whenever the living come too close.
+- The Ancient — Whatever guards the Last Isle was already old when the war began. Nobody who reaches it comes back to say what it protects.
+### 👥 | NPCs
+Not everyone out there wants you dead. Some will trade with you, teach you or fight beside you. Others will take everything you carry.
+- Wandering Traders — Caravans that cross the regions trading water, food and scrap. What they sell, and what it costs, changes with the seasons.
+- Settlers — Survivors holding on to the clean water and fertile ground of the Green Remnants. Help them and they'll remember it.
+- Scrapsmiths — Tinkerers who turn old machine parts and crystal shards into tools, weapons and gear, if you bring them the scrap.
+- Mage Hermits — The last who still practise the old magic, hidden in ruined towers. Survivors with a sharp mind can learn from them.
+- Tomb Keepers — Desert folk who guard the pyramids and tombs, and know where the rare water pods are hidden.
+- Raiders — Survivors who decided taking is easier than finding. They watch the roads, the ruins and the water holes.
+- Machine Remnants — War machines still following orders from a war that ended long ago. Some patrol, some guard, and a few have started to think for themselves.
 
 ## Development Progress | progress
 Lini: Huma is in early development. Here's how far the journey has come and what's next.
