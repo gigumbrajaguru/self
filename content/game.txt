@@ -63,11 +63,10 @@ Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and p
 What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
 
 ## Development Progress | progress
-Lini: Huma is in its design stage. Here's how far the journey has come.
-- done: The world and its story — A post-apocalyptic world after the Machine vs Magic war, with seasons and deadly weather
-- done: Character creation — Four character slots, appearance options and permanent survivors
-- done: Survival and attributes — Health, hunger, thirst, oxygen and temperature, shaped by Strength, Agility and Intel
-- done: World layout — A procedurally generated 3D world from the death ray to the red lava
-- done: First biomes — The Desert and the Wastelands
-- next: More biomes — New lands, new dangers
+Lini: Huma is in early development. Here's how far the journey has come and what's next.
+- done: Game concept and story — The post-apocalyptic world after the Machine vs Magic war, its seasons, weather and lands
+- now: Character creation — Building the survivor creator: four character slots, appearance, survival needs and attributes
+- next: World creation — A procedurally generated 3D world from the death ray to the red lava
+- next: First biomes — The Desert and the Wastelands
+- next: Seasons and weather — Summer, winter, storms, acid rain and heat waves
 - next: First playable build — Stepping into the world for the first time
