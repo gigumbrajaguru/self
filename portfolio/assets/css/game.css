@@ -206,6 +206,100 @@
 .game-layer:first-child > div { border-color: rgba(255, 77, 109, 0.5); }
 .game-layer:last-child > div { border-color: rgba(255, 106, 0, 0.5); }
 
+/* Biome regions */
+.game-regions-total {
+  margin: -24px 0 28px;
+  text-align: center;
+  color: var(--game-ember);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.game-regions {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.game-region {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.game-region[open],
+.game-region:hover { border-color: rgba(255, 122, 61, 0.45); }
+
+.game-region summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.game-region summary::-webkit-details-marker { display: none; }
+
+.game-region summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--game-ember);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.game-region[open] summary::after { content: "\2212"; }
+
+.game-region-head h3 {
+  color: var(--clr-white);
+  font-size: 1.1rem;
+}
+
+.game-region-count {
+  color: var(--clr-text-muted);
+  font-size: 0.8rem;
+}
+
+.game-region-intro {
+  margin: 0 22px 16px;
+  color: var(--clr-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.game-biomes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+  padding: 0 22px 22px;
+  list-style: none;
+}
+
+.game-biomes li {
+  padding: 14px 16px;
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+}
+
+.game-biomes h4 {
+  margin-bottom: 4px;
+  color: var(--clr-white);
+  font-size: 0.95rem;
+}
+
+.game-biomes p {
+  color: var(--clr-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 /* Development progress */
 .game-meter {
   max-width: 720px;
@@ -319,6 +413,9 @@
   .game-tagline { font-size: 1.05rem; }
   .game-prose p { font-size: 1rem; }
   .game-layer { gap: 14px; }
+  .game-region summary { padding: 14px 16px; gap: 12px; }
+  .game-region-intro { margin: 0 16px 14px; }
+  .game-biomes { padding: 0 16px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
