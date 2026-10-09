@@ -424,3 +424,31 @@
 @media (prefers-reduced-motion: reduce) {
   .game-step.is-now::before { animation: none; }
 }
+
+/* Saga: the story told as acts on a timeline, from the age of steel to the ashes */
+.game-saga { max-width: 780px; }
+
+.game-saga::before {
+  background: linear-gradient(180deg, #b8c7ff 0%, #8a96b8 28%, #7c6af7 55%, var(--game-ray) 80%, var(--game-ember) 100%);
+}
+
+.game-saga .game-layer { align-items: flex-start; padding: 10px 0; }
+
+.game-saga .game-layer > div { padding: 22px 26px; }
+
+.game-saga .game-layer h3 { margin-bottom: 10px; font-size: 1.15rem; }
+
+.game-saga .game-layer p { font-size: 0.98rem; line-height: 1.8; }
+
+.game-saga .game-layer p + p { margin-top: 12px; }
+
+.game-saga .game-layer:first-child > div { border-color: rgba(184, 199, 255, 0.45); }
+
+.game-saga .game-layer:last-child > div {
+  border-color: rgba(255, 122, 61, 0.55);
+  background: linear-gradient(var(--game-glow), var(--game-glow)), var(--clr-surface);
+}
+
+@media (max-width: 640px) {
+  .game-saga .game-layer > div { padding: 18px; }
+}

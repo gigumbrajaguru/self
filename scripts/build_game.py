@@ -8,6 +8,7 @@ Text format, one entry per line (blank lines are ignored):
   Text                       paragraph: in the hero before the first chapter, in the chapter
                              before its first card, otherwise in the current card
   ## Heading                 story chapter, numbered automatically
+  ## Heading | saga          story chapter whose cards are acts on a timeline, read in order
   ## Heading | layers        chapter whose cards stack from the top of the world to the bottom
   ## Heading | regions       chapter whose cards are expandable regions listing their biomes
   ## Heading | groups        chapter whose cards are expandable groups listing their entries, all open
@@ -26,7 +27,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "content" / "game.txt"
 GAME_PAGE = ROOT / "portfolio" / "game" / "index.html"
 HOME_PAGE = ROOT / "portfolio" / "index.html"
-KINDS = ("story", "layers", "regions", "groups", "progress")
+KINDS = ("story", "saga", "layers", "regions", "groups", "progress")
+STACKED = ("saga", "layers")  # chapters whose cards stack in a vertical timeline
 LISTS = ("regions", "groups")  # chapters whose cards list '- Name — details' entries
 WIDE = 200  # entries with longer details get a double-width tile
 STATUSES = {"done": "Done", "now": "In progress", "next": "Planned"}
@@ -55,7 +57,7 @@ def parse(text):
             continue
         if line.startswith("### "):
             if not chapter or chapter["kind"] == "progress":
-                fail("a '### ' card needs a story, layers, regions or groups chapter above it", number)
+                fail("a '### ' card needs a story, saga, layers, regions or groups chapter above it", number)
             icon, title = split_pipe(line[4:])
             chapter["cards"].append({"icon": icon, "title": title, "text": [], "items": []})
         elif line.startswith("## "):
@@ -118,7 +120,7 @@ def icon_html(card):
 
 def render_card(card, kind):
     icon = icon_html(card)
-    if kind == "layers":
+    if kind in STACKED:
         return [
             f'        <li class="game-layer">{icon}<div>',
             f'          <h3>{esc(card["title"])}</h3>',
@@ -220,8 +222,8 @@ def render(page):
                 "    </div>",
             ]
         elif chapter["cards"]:
-            tag = "ol" if kind == "layers" else "div"
-            css = "game-layers" if kind == "layers" else "game-cards"
+            tag = "ol" if kind in STACKED else "div"
+            css = {"saga": "game-layers game-saga", "layers": "game-layers"}.get(kind, "game-cards")
             out += [
                 f'    <{tag} class="{css}">',
                 *(line for card in chapter["cards"] for line in render_card(card, kind)),
