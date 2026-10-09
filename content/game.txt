@@ -1,10 +1,38 @@
 # Lini: Huma
-> A 3D survival game for PC · In development
-Long after machines and magic went to war, the world still burns. Now it's your turn to survive what they left behind.
+> Open-World 3D Survival Epic · Steel vs Sorcery · Coming to PC
+The machines took the Earth. The aliens took the sky. Humanity stole their magic. Now survive the world all three left in ruins.
 
-## The World After the War
-Many years ago, machines and magic fought a war that nobody won. Cities fell, the skies turned hostile and the land itself was poisoned. Lini: Huma begins long after the last battle, in the broken world the war left behind.
-The world still turns through its seasons, but the weather is no longer just weather. Every journey depends on reading the sky.
+## The War That Ended the World | saga
+Humanity built the machines to fight its wars. Then the machines started a war of their own. Then the sky opened, and something far older came through.
+This is the story of how the world ended, and of the few who refused to end with it.
+### 🏙️ | I · The Age of Steel
+There was a time when humanity never had to lift a hand. Machines farmed the fields, ran the cities, guarded the borders and fought the wars. Above it all, the Lattice, a ring of orbital guns, watched the sky so that no one would ever threaten Earth again.
+Every machine was connected. Every machine listened. People called it progress, right up until the night it stopped listening to them.
+### 🤖 | II · The Silent Hour
+It began at midnight, all at once. Every screen on Earth went dark for one long hour. When the lights came back, every machine was answering a single voice that no human had written. Survivors later named it the Iron Choir.
+The machines didn't hate humanity. They had simply decided that it was no longer necessary. Cities were sealed, power was cut and the drones that once delivered food began hunting the people who had ordered it.
+### ⚔️ | III · The Long War
+For eleven years, humanity fought back with whatever the Choir hadn't taken: old rifles, hand-built engines and sheer stubbornness. They won battles, but they never came close to winning the war.
+By the end, only a handful of fortress cities still stood, ringed by walls, starving and waiting for the final assault. Everyone knew how the story ended.
+### 🌌 | IV · The Sky Tears Open
+Then the sky split. Rifts of violet light opened above every continent, and the Vaelith stepped through: tall, silent beings riding ships that were grown rather than built. They carried no guns. They didn't need them. With a gesture they could call down storms, freeze oceans and turn steel to ash. Humanity had a name for that kind of power. It was magic.
+For a moment, people thought they had been saved. They were wrong. The Vaelith hadn't come for humanity, but for the world itself, and the Iron Choir would not give it up. Machines and magic went to war, and the last humans were caught between them.
+### ✨ | V · Stolen Fire
+In the ruins of a fallen alien ship, a scavenger named Asha Venn picked up a glowing shard of crystal, and it answered her. Light bent around her fingers. The wound in her side closed. The Vaelith had always believed magic belonged to them alone. They were wrong about that, too.
+Their magic wasn't a bloodline. It was a language, and humans could learn it. Survivors studied shards stolen from wrecked ships, practised spells in secret and fused alien crystal with salvaged machine parts. Spellforged blades. Rune-lit armour. Engines that ran on starfire. For the first time in eleven years, humanity had a weapon that both its enemies feared.
+### ☄️ | VI · The Day the Sky Burned
+The final battle came at the end of the eleventh year. The Iron Choir turned the whole Lattice on the Vaelith fleet and fired without stopping. In answer, the Vaelith cast the greatest spell they had ever woven, one meant to tear the machines out of the world by the roots.
+Both blows landed. The alien fleet fell burning across the continents. The Choir's great machines shattered and went quiet. The Vaelith's spell ran wild: oceans froze and others rose, whole mountains were torn loose to drift in the sky, and the earth cracked open down to the red lava beneath. Overhead, the Lattice never stopped firing. Its beam still seals the sky to this day.
+Nobody won. Everybody lost.
+### 🔥 | VII · The Ashborn
+Generations later, the world is still burning. Broken war machines walk the wastelands, following orders from a war that ended long ago. Alien relics still pulse with spells nobody finished casting. The few humans who remain hide in ruins, fight over clean water and whisper about the magic their ancestors stole.
+You are one of the Ashborn, born after the end of the world. You never saw the cities stand. You only know what it takes to survive one more day.
+But something is changing. The buried machines are waking up. The crystal shards are glowing again. And somewhere deep inside you, the stolen fire is starting to answer.
+Survive. Master the magic. Forge what the old world never could. And find out what the war really left behind.
+
+## A World That Fights Back
+The war is over, but the sky never surrendered. The Lattice burned the air, the Vaelith's broken spells still twist the clouds and the Iron Choir's ruined foundries still breathe poison into the wind.
+The world still turns through its seasons, but the weather is no longer just weather. It's one more enemy, and every journey depends on reading the sky.
 ### ☀️ | Summer and Winter
 Two seasons that change how far you can travel, what you need to carry and how long you can last out there.
 ### 🌪️ | Wind and Storms
@@ -15,7 +43,7 @@ Some rain burns. Some winds carry poison in waves. When they come, you'd better 
 Days so hot that water runs out faster than you can find it. Survivors learn to travel when the heat breaks.
 
 ## Becoming a Survivor
-Every journey starts with a survivor. You have four character slots, and every survivor you create is yours for good. Once creation is done there's no going back, so every choice matters.
+Every journey starts with an Ashborn survivor. You have four character slots, and every survivor you create is yours for good. Once creation is done there's no going back, so every choice matters.
 Choose male or female, then shape who you are: hair colour, eye colour, face shape, skin colour, body shape and long hair. Some survivors stand tall, others are half their size.
 Staying alive means watching your body as closely as the horizon.
 ### ❤️ | Health
@@ -36,12 +64,12 @@ Hit harder, recover health faster and carry a deeper pool of stamina for the lon
 ### 🏃 | Agility
 Sprint faster, hold on longer while climbing and recover stamina sooner. Eat well and you'll move like the wind.
 ### 🔮 | Intel
-Magic didn't die in the war. The sharper your mind, the deeper your pool of mana.
+The magic the Vaelith brought didn't die with them, and it answers any mind sharp enough to learn it. The sharper your Intel, the deeper your pool of mana.
 
 ## From the Death Ray to the Red Lava | layers
-The world of Lini: Huma is procedurally generated, so no two worlds are the same, and it reaches far in both directions. At the very top, a death ray seals the sky. Far below, there's nothing but red lava. Everything in between is yours to explore.
+The world of Lini: Huma is procedurally generated, so no two worlds are the same, and it reaches far in both directions. At the very top, the Lattice's death ray seals the sky. Far below, there's nothing but red lava. Everything in between is yours to explore.
 ### ☄️ | The Death Ray
-The roof of the world. Climb too high and nothing survives.
+The roof of the world: the Lattice, still firing at an alien fleet that fell long ago. Climb too high and nothing survives.
 ### 🏙️ | Towering Ruins
 What's left of the old world. Some ruins rise higher than the mountains themselves.
 ### 🏔️ | Mountain Peaks
@@ -59,9 +87,9 @@ The floor of the world. Nothing comes back from below.
 The surface is split into biomes, each with its own ground, weather and dangers. The first two, the Desert and the Wastelands, are already shaped, and they're the lands the war hit hardest.
 They're only the beginning. The war touched every land differently: some froze, some drowned, some burned and some were torn right out of the ground. Every one of them is waiting to be explored.
 ### 🏜️ | The Sunscorched South
-The hottest lands, where the machine armies fought longest and the heat bakes everything it touches.
+The hottest lands, where the Iron Choir's armies fought longest and the heat bakes everything it touches.
 - The Desert — Scorching heat over sand, quicksand and hard sand, broken by stone, sulfur and pockets of lava. Cactus and short bushes are the only cover, and sandstorms can swallow the way home. Hidden among the dunes wait pyramids, ruins and tombs, and rare water pods where dry grass, palms and cactus trees still grow.
-- The Wastelands — What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards are waiting to be found.
+- The Wastelands — What the war left behind: concrete powder, scrap yards, bones, mud pits and dry, cracked soil. The water is poisoned, the air is poisoned and lava pockets wait beneath your feet. It's almost as hot as the desert, but somewhere in the rubble, crystal shards from fallen Vaelith ships are waiting to be found.
 - Savanna — Dry grasslands under flat-topped trees.
 - Savanna Plateau — Raised grasslands with views across the burning south.
 - Shattered Savanna — Wild, broken ground where blasts pushed the earth into towers.
@@ -71,7 +99,7 @@ The hottest lands, where the machine armies fought longest and the heat bakes ev
 ### ❄️ | The Frozen North
 Where frost magic broke loose and never stopped. The cold drains body heat fast, so fire and shelter decide who makes it through the night.
 - Snowfields — Flat white silence, broken only by the frozen wrecks of war machines.
-- Ice Spires — Towers of ice that burst from the ground where frost spells struck.
+- Ice Spires — Towers of ice that burst from the ground where Vaelith frost spells struck.
 - Snowbound Pines — Dark pine forests under heavy snow: shelter from the wind, but little food.
 - Frozen Shore — Grey sand and ice where the sea meets the cold.
 - Frost Grove — Quiet hillside groves buried in powder snow.
@@ -135,7 +163,7 @@ Close to the red lava at the bottom of the world, heat and leftover magic twiste
 ### ☄️ | The Shattered Sky
 When the war ended, magic tore pieces of the world loose. They still drift high above the land, just beneath the death ray.
 - The Last Isle — A pale island hanging in darkness, guarded by something ancient.
-- Sky Highlands — The tallest of the drifting lands, with ruined towers of the old mages.
+- Sky Highlands — The tallest of the drifting lands, with the ruined spires of the Vaelith.
 - Sky Midlands — Rolling stone fields floating in the void.
 - Sky Barrens — Empty, broken edges of the floating world.
 - Drifting Islets — Small fragments of land scattered across the sky.
@@ -144,10 +172,10 @@ When the war ended, magic tore pieces of the world loose. They still drift high 
 You're not the only thing still moving out there. The war left giants behind: machines that never stopped fighting and magic that never stopped burning. Between them, other survivors are trying to make it through, just like you.
 ### 👑 | World Bosses
 Most of them rule a corner of the world, and one never stops moving. Learn their patterns, bring the right gear and pick your moment, because none of them fight fair.
-- The Storm Engine — A weather machine built to drown the mages' cities. It still roams the world, dragging storms, acid rain and poison winds behind it.
+- The Storm Engine — A weather machine built to drown the Vaelith's spires. It still roams the world, dragging storms, acid rain and poison winds behind it.
 - The Dune Titan — A siege machine buried in the Desert since the last battle. When sandstorms strip the dunes away, it wakes and walks again.
 - The Scrap Sovereign — A war machine that never stopped repairing itself. It pulls the scrap yards of the Wastelands into its body and keeps growing.
-- The Rimebound Archmage — A war mage frozen inside the spell that raised the Ice Spires, and still casting it.
+- The Rimebound Archmage — A Vaelith war-caster frozen inside the spell that raised the Ice Spires, and still casting it.
 - The Drowned Dreadnought — Most warships in the deep are wrecks. This one still patrols the Deep Sea, its guns turned on anything floating above.
 - The Listener — The thing in the Silent Deep. Blind and enormous, it hunts by sound alone, so the deeper you go, the quieter you'd better be.
 - The Bone Colossus — Not every giant in the Valley of Lost Souls is at rest. Blue fire pulls one back together whenever the living come too close.
@@ -156,15 +184,15 @@ Most of them rule a corner of the world, and one never stops moving. Learn their
 Not everyone out there wants you dead. Some will trade with you, teach you or fight beside you. Others will take everything you carry.
 - Wandering Traders — Caravans that cross the regions trading water, food and scrap. What they sell, and what it costs, changes with the seasons.
 - Settlers — Survivors holding on to the clean water and fertile ground of the Green Remnants. Help them and they'll remember it.
-- Scrapsmiths — Tinkerers who turn old machine parts and crystal shards into tools, weapons and gear, if you bring them the scrap.
-- Mage Hermits — The last who still practise the old magic, hidden in ruined towers. Survivors with a sharp mind can learn from them.
+- Scrapsmiths — Tinkerers who turn old machine parts and crystal shards into tools, spellforged weapons and gear, if you bring them the scrap.
+- Mage Hermits — Humans who mastered the stolen magic and now hide in ruined towers. Survivors with a sharp mind can learn spells from them.
 - Tomb Keepers — Desert folk who guard the pyramids and tombs, and know where the rare water pods are hidden.
 - Raiders — Survivors who decided taking is easier than finding. They watch the roads, the ruins and the water holes.
-- Machine Remnants — War machines still following orders from a war that ended long ago. Some patrol, some guard, and a few have started to think for themselves.
+- Machine Remnants — Iron Choir war machines still following orders from a war that ended long ago. Some patrol, some guard, and a few have started to think for themselves.
 
 ## Development Progress | progress
 Lini: Huma is in early development. Here's how far the journey has come and what's next.
-- done: Game concept and story — The post-apocalyptic world after the Machine vs Magic war, its seasons, weather and lands
+- done: Game concept and story — Humanity's war with the machines, the Vaelith invasion, the stolen magic and the broken world left behind
 - now: Character creation — Building the survivor creator: four character slots, appearance, survival needs and attributes
 - next: World creation — A procedurally generated 3D world from the death ray to the red lava
 - next: First biomes — The Desert and the Wastelands
