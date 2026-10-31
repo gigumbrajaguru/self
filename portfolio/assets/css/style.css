@@ -408,6 +408,18 @@ img { max-width: 100%; display: block; }
 
 .grid-2 { grid-template-columns: 1fr 1fr; }
 
+/* Centered card grid: incomplete last rows stay centered instead of left-aligned */
+.projects-centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-centered > .project-card {
+  flex: 0 1 calc((100% - 56px) / 3);
+  min-width: 300px;
+}
+
 .project-card {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
@@ -943,6 +955,11 @@ img { max-width: 100%; display: block; }
   .projects-grid,
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .projects-centered > .project-card {
+    flex-basis: 100%;
+    min-width: 0;
   }
 
   .footer .container {
